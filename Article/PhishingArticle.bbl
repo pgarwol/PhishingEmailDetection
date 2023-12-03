@@ -16,6 +16,11 @@ gittysatyam.
 \newblock How to send automated email messages in python.
 \newblock {\em geeksforgeeks.org}, 2021.
 
+\bibitem{doppelganger}
+godaigroup.net.
+\newblock Doppelganger domains.
+\newblock {\em Godai Group}, 2011.
+
 \bibitem{govpl_phishing}
 gov.pl.
 \newblock Czym jest phishing i jak nie dać się nabrać na podejrzane
@@ -54,11 +59,15 @@ Maxwell Timothy.
   email.
 \newblock {\em makeuseof.com}, 2023.
 
-\bibitem{whatIsPhishingCNBC}
-Bob Violino.
-\newblock Phishing attacks are increasing and getting more sophisticated.
-  here’s how to avoid them.
-\newblock {\em cnbc.com}, 2023.
+\bibitem{hackernoon_mail}
+Dylan Tweney.
+\newblock How to fake an email from almost anyone in under 5 minutes.
+\newblock {\em Hackernoon.com}, 2017.
+
+\bibitem{idn_homograph}
+Wikipedia.com.
+\newblock Idn homograph attack.
+\newblock {\em Wikipedia}, 2011.
 
 \bibitem{netia_spoofing}
 Tomasz Łużak.

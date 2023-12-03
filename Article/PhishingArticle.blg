@@ -8,45 +8,45 @@ Database file #1: bibliografia.bib
 Warning--empty year in abnormal_phishingtypes
 Warning--empty year in govpl_phishing
 Warning--empty year in kaspersky_social_engineering
-You've used 12 entries,
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            549 strings with 5327 characters,
-and the built_in function-call counts, 2477 in all, are:
-= -- 237
-> -- 84
+            558 strings with 5401 characters,
+and the built_in function-call counts, 2885 in all, are:
+= -- 277
+> -- 98
 < -- 0
-+ -- 38
-- -- 24
-* -- 104
-:= -- 476
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 48
++ -- 44
+- -- 28
+* -- 120
+:= -- 554
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 120
-empty$ -- 205
-format.name$ -- 24
-if$ -- 490
+cite$ -- 17
+duplicate$ -- 140
+empty$ -- 239
+format.name$ -- 28
+if$ -- 572
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 12
-newline$ -- 63
-num.names$ -- 24
-pop$ -- 54
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 73
+num.names$ -- 28
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 42
 quote$ -- 0
-skip$ -- 80
+skip$ -- 94
 stack$ -- 0
-substring$ -- 62
-swap$ -- 12
+substring$ -- 72
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 56
 warning$ -- 3
-while$ -- 24
-width$ -- 14
-write$ -- 119
+while$ -- 28
+width$ -- 16
+write$ -- 139
 (There were 3 warnings)

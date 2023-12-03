@@ -4,6 +4,7 @@
 \usepackage[polish]{babel}
 \usepackage{enumitem}
 \usepackage{graphicx}
+
 %\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 
 \title{Phishing}
@@ -15,7 +16,7 @@
 \newpage 
 
 \section{Wprowadzenie}
- \cite{whatIsPhishingCNBC}
+
 
 
 \newpage
@@ -39,7 +40,7 @@ Groźniejszym rodzajem phishingu jest spear-phishing. Polega on na zaatakowaniu 
 	\centering
 	\includegraphics[width=0.8\linewidth]{Pictures/proofpoint_phishing2019.jpg}
 	\caption{Skala ataków phishingowych w 2019. roku wg. raportu Proofpoint}
-	\label{fig:sample}
+	\label{fig:pp_phishing2019}
 \end{figure}
 
 \newpage
@@ -79,8 +80,25 @@ Cel ataków phishingowych nie różni się od innych rodzajów kradzieży, a wi�
 	\item Loginu i hasła do kont firmowych - dostęp do wewnętrznego systemu firm, często aby ukraść dane i zażądać za nie okup. Nie brakuje takich przypadków. O kilku napiszemy więcej w sekcji {\bfseries Studium przypadku: Znane ataki phishingowe}.
 \end{itemize}
 
-\newpage
 \section{Sposoby identyfikacji phishingu}
+Phishing można zidentyfikować na wiele sposobów. Często ataki tego typu są przeprowadzone w sposób niedbały, co zdecydowanie ułatwia sprawę.
+
+W przypadku maili konieczne jest sprawdzenie adresu. Nie jest to zawsze skuteczne, ponieważ system wysyłania poczty internetowej posiada wady i bardzo łatwo jest podszyć się pod kogoś, niezależnie od tego kim lub czym dana osoba albo instytucja jest \cite{hackernoon_mail}. Na szczęście niektóre serwisy (jak na przykład Gmail) radzą sobie z flagowaniem takich wiadomości. Innym aspektem, który warto wziąć pod uwagę również przy wiadomościach SMS jest pisownia. Poziom napisanej treści przez potencjalnego atakującego często odzwierciedla niską dbałość i pośpiech. Jeżeli wiadomość wygląda dobrze, należy się zastanowić - Czy wielki bank naprawdę potrzebuje moich dodatkowych danych? Jest to tak niezbędne do jego funkcjonowania?
+\begin{figure}[b!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Pictures/mbank_phishing.png}
+	\caption{Przykład ataku typu phishing, Niebezpiecznik.pl, 2022}
+	\label{fig:mbankPhishing}
+\end{figure}
+
+W przypadku adresów URL ważną kwestią jest jego uważne sprawdzenie litera po literze, ponieważ różnice bywają ciężkie do dostrzeżenia. W pośpiechu może umknąć różnica pomiędzy małym L: "l", a wielkim i: "I". Wielkie "O" może przypominać "0" itd. Trudniejszymi przypadkami są ataki typu \textit{IDN homograph attack}. Ich istota tkwi w tym, że alfabety posiadają litery, które są identyczne, jednakże ich kody \textit{Unicode} się różnią. Dla przykładu alfabety: grecki, cyrylica, łaciński posiadają literę ⟨o⟩, która dla człowieka jest nierozróżnialna \cite{idn_homograph}. "Komputer" z rozróżnianiem liter nie ma najmniejszego problemu, stąd też da się go (a następnie ofiary) łatwo oszukać i zarejestrować domenę bliźniaczą do znanej, zaufanej przez potencjalną ofiarę. Bywa również, że między \textit{hostem} a \textit{subdomeną} brakuje kropki. Jest to znane jako \textit{Doppelganger Domain} \cite{doppelganger}. Należy uważać również na jaką stronę kieruje hiperłącze, ponieważ tekst hiperłącza niekoniecznie musi oznaczać, że jego atrybut \textit{href} służący do wskazywania adresu docelowego - faktycznie wskazuje na pokazany adres.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Pictures/url_phishing.jpg}
+	\caption{Przykład fałszywego hiperłącza, digitalcheck.com, 2021}
+	\label{fig:url_phishing}
+\end{figure}
 
 \newpage
 \section{Skutki ataków phishingowych}
