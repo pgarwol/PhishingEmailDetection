@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  3 DEC 2023 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  3 DEC 2023 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -147,18 +147,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 26.
- [3] [4] [5] [6]
-[7] [8] [9] [10] [11] [12] (PhishingArticle.bbl) [13] (PhishingArticle.aux)
+<Pictures/proofpoint_phishing2019.jpg, id=12, 389.95688pt x 219.06844pt>
+File: Pictures/proofpoint_phishing2019.jpg Graphic file (type jpg)
+<use Pictures/proofpoint_phishing2019.jpg>
+Package pdftex.def Info: Pictures/proofpoint_phishing2019.jpg  used on input li
+ne 40.
+(pdftex.def)             Requested size: 276.00105pt x 155.05496pt.
+ [3] [4 <./Pictures/proofpoint_phishing2019.jpg>] [5] [6] [7] [8] [9] [10] [11]
+ [12]
+(PhishingArticle.bbl) [13] (PhishingArticle.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3038 strings out of 475248
- 50389 string characters out of 5767624
- 1927785 words of memory out of 5000000
- 24561 multiletter control sequences out of 15000+600000
+ 3048 strings out of 475248
+ 50758 string characters out of 5767624
+ 1926785 words of memory out of 5000000
+ 24571 multiletter control sequences out of 15000+600000
  566881 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,1000b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -171,9 +178,9 @@ jfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Patryk\AppData\Local\MiK
 TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Program Files/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PhishingArticle.pdf (13 pages, 106050 bytes).
+Output written on PhishingArticle.pdf (13 pages, 153498 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
+ 327 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

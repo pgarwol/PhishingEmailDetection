@@ -32,9 +32,14 @@ Bart Lenaerts-Bergmans.
 \newblock Understanding the difference between spoofing vs phishing.
 \newblock {\em crowdstrike}, 2023.
 
+\bibitem{identityguard}
+Jory MacKay.
+\newblock What data do cybercriminals steal? (how to protect yours).
+\newblock {\em IdentityGuard}, 2023.
+
 \bibitem{netia_dns}
 Netia.pl.
-\newblock erwer dns – co to jest? do czego służy?
+\newblock Serwer dns – co to jest? do czego służy?
 \newblock {\em Netia}, 2020.
 
 \bibitem{proofpoint2020}
