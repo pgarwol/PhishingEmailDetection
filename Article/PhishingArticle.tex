@@ -35,15 +35,40 @@ Atak phishingowy może zostać przeprowadzony na nieokreślonych ofiarach. Ataku
 
 Groźniejszym rodzajem phishingu jest spear-phishing. Polega on na zaatakowaniu określonej osoby lub podmiotu, co rażąco wpływa na jego skuteczność. Ataki te są planowane dłuższy czas, aby dokładnie poznać słabe strony ofiary i tym sposobem zoptymalizować szanse powodzenia. Według raportu firmy Proofpoint z roku 2020, w roku 2019. 88\% organizacji na świecie doświadczyło zagrożenia tego rodzaju. Spośród nich aż 55\% stało się jego ofiarami \cite{proofpoint2020}.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{Pictures/proofpoint_phishing2019.jpg}
-	\caption{Skala ataków phishingowych w 2019. roku wg. raportu Proofpoint}
-	\label{fig:sample}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{Pictures/proofpoint_p%hishing2019.jpg}
+%	\caption{Skala ataków phishingowych w 2019. roku wg. %raportu Proofpoint}
+%	\label{fig:sample}
+%\end{figure}
 
 \newpage
-\section{Narzędzia i techniki wykorzystywane przez oszustów}
+\section{Wybrane narzędzia i techniki wykorzystywane przez oszustów}
+
+\subsection{Inżynieria społeczna}
+Inżynieria społeczna została już przez nas wspomniana. Nazwa jest dość enigmatyczna, aczkolwiek sprowadza się do relatywnie prostej rzeczy - oszukanie człowieka. Kilka sposobów na osiągnięcie tego efektu to:
+\begin{itemize}[label=$\rightarrow$]
+	\item Pretexting - opiera się na budowaniu zaufania. Wymyślane są przeróżne scenariusze, których atakujący używają do nakłonienia ofiar do ujawnienia informacji. Przestępca może użyć pretekstu, aby podszyć się pod personel IT i poprosić o dane logowania.
+	\item Podszywanie się pod kierownictwo - znane również jako CEO fraud, jest to połączenie spear-phishingu oraz pretextingu. Jak nazwa wskazuje, atakujący podszywa się pod przełożonego ofiary, przez co zdecydowanie łatwiej jest taką osobę nabrać .
+	\item Romansowe oszustwa - oszuści wykorzystują (głównie stricte randkowe) aplikacje w celu znalezienia ofiary, aby następnie budować z nią romantyczną relację i w odpowiednim momencie zaatakować \cite{abnormal_phishingtypes}.
+\end{itemize} 
+
+\subsection{Spoofing}
+Spoofing odnosi się do fałszowania lub modyfikowania informacji w celu wprowadzenia w błąd lub oszukania odbiorcy co do prawdziwego źródła lub tożsamości nadawcy. Spoofing i phishing to de facto dwa różne sposoby ataku, jednakże często idą w parze. Warto tu nadmienić, że:
+\begin{itemize}[label=$\rightarrow$]
+	\item Atak spoofingowy {\bfseries może} utworzyć grunt pod atak phishingowy
+	\item Atak phishingowy {\bfseries nigdy} nie tworzy gruntu pod atak spoofingowy
+\end{itemize}
+Choć różnica między tymi atakami może być na pierwszy rzut oka niejasna, sedno motywacji wyżej wymienioncyh działań jest zgoła odmienne. Celem spoofingu jest podszywanie się pod czyjąś tożsamość, podczas gdy celem ataków phishingowych jest kradzież informacji \cite{crowdstrike_phishing_vs_spoofing}.
+Podszycie się może zostać osiągnięte na różne sposoby, m.in:
+\begin{itemize}[label=$\rightarrow$]
+	\item E-mail spoofing - atakujący tworzy adres e-mail, który przypomina swoim atrybutem "od: " lub zwyczajnie adresem - kogoś nam zaufanego, na przykład instytucję bankową
+	\item Caller ID spoofing - spoofing telefoniczny - podobny do e-mail spoofingu, ale odnosi się do numeru telefonu, który wbrew intuicji - bardzo łatwo jest podrobić. "Dzieje się tak przez luki w używanych powszechnie protokołach VoiP, w których serwery mają gotowe rozwiązania do modyfikacji wyświetlanych nagłówków"\cite{netia_spoofing}.
+	\item DNS spoofing - "DNS (Domain Name System) to protokół, którego główna funkcja polega na tłumaczeniu łatwych do zapamiętania przez człowieka nazw domen na zrozumiałe dla komputerów dane liczbowe" \cite{netia_dns}. Umiejętne zatrucie tego protokołu powoduje przekierowanie użytkownika do sfałszowanej strony.  
+\end{itemize}
+
+\subsection{Narzędzia automatyzujące}
+Narzędzia te zostały już przez nas wspomniane. Nie ma większego sensu rozwodzić się nad nimi, ponieważ ich nazwa tłumaczy działania w sposób wystarczający. Dostępność tego typu rozwiązań jest do tego stopnia, że podczas szukania rozwiązań do najzwyklejszych zagadnień języka programowania Python - natknęliśmy się na tutorial pokazujący jak wysyłać wiadomości przez aplikację WhatsApp, korzystając z krótkiego Pythonowego skrypciku. 
 
 \newpage
 \section{Cele ataków phishingowych}

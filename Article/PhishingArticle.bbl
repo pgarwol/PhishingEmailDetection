@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{abnormal_phishingtypes}
+abnormalsecurity.com.
+\newblock What is a social engineering attack? how they happen, why they work,
+  and how to prevent them.
+\newblock {\em Abnormal Security Corp.}
 
 \bibitem{dsgi_wiley}
 dsgi.wiley.com.
@@ -14,12 +20,22 @@ gittysatyam.
 gov.pl.
 \newblock Czym jest phishing i jak nie dać się nabrać na podejrzane
   wiadomości e-mail oraz sms-y?
-\newblock {\em www.gov.pl}, -.
+\newblock {\em www.gov.pl}.
 
 \bibitem{kaspersky_social_engineering}
 kaspersky.co.uk.
 \newblock What is social engineering?
-\newblock {\em AO Kaspersky Lab}, -.
+\newblock {\em AO Kaspersky Lab}.
+
+\bibitem{crowdstrike_phishing_vs_spoofing}
+Bart Lenaerts-Bergmans.
+\newblock Understanding the difference between spoofing vs phishing.
+\newblock {\em crowdstrike}, 2023.
+
+\bibitem{netia_dns}
+Netia.pl.
+\newblock erwer dns – co to jest? do czego służy?
+\newblock {\em Netia}, 2020.
 
 \bibitem{proofpoint2020}
 proofpoint.
@@ -38,5 +54,10 @@ Bob Violino.
 \newblock Phishing attacks are increasing and getting more sophisticated.
   here’s how to avoid them.
 \newblock {\em cnbc.com}, 2023.
+
+\bibitem{netia_spoofing}
+Tomasz Łużak.
+\newblock Spoofing – co to jest? jak się przed nim bronić?
+\newblock {\em Netia}, 2022.
 
 \end{thebibliography}

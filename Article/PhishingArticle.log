@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  2 DEC 2023 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  3 DEC 2023 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -147,19 +147,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 26.
-<Pictures/proofpoint_phishing2019.jpg, id=12, 389.95688pt x 219.06844pt>
-File: Pictures/proofpoint_phishing2019.jpg Graphic file (type jpg)
-<use Pictures/proofpoint_phishing2019.jpg>
-Package pdftex.def Info: Pictures/proofpoint_phishing2019.jpg  used on input li
-ne 40.
-(pdftex.def)             Requested size: 276.00105pt x 155.05496pt.
- [3]
-Overfull \hbox (9.05058pt too wide) in paragraph at lines 46--46
-[]\T1/cmr/bx/n/14.4 Narz¦dzia i tech-niki wy-ko-rzy-sty-wane przez oszu-
- []
-
-[4 <./Pictures/proofpoint_phishing2019.jpg>] [5] [6] [7] [8] [9] [10] [11]
-(PhishingArticle.bbl) [12] (PhishingArticle.aux)
+ [3] [4] [5] [6]
+[7] [8] [9] [10] [11] [12] (PhishingArticle.bbl) [13] (PhishingArticle.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -167,22 +156,24 @@ L3 programming layer <2023-08-29>
  ) 
 Here is how much of TeX's memory you used:
  3038 strings out of 475248
- 50600 string characters out of 5767624
- 1925785 words of memory out of 5000000
- 24563 multiletter control sequences out of 15000+600000
- 565329 words of font info for 51 fonts, out of 8000000 for 9000
+ 50389 string characters out of 5767624
+ 1927785 words of memory out of 5000000
+ 24561 multiletter control sequences out of 15000+600000
+ 566881 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,1000b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ect
 i1000.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecbx1440.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm1000.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecrm1200.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb>
-Output written on PhishingArticle.pdf (12 pages, 128281 bytes).
+600\ecbx1000.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx1200.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecbx1440.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Patryk\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Patryk\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on PhishingArticle.pdf (13 pages, 106038 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
+ 311 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
