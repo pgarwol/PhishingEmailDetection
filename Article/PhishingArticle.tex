@@ -12,10 +12,18 @@
 
 \begin{document}
 \maketitle
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{Pictures/phishing_comics.jpg}
+	\caption{Humorystyczne ukazanie Phishingu, Scott Adams, 2005}
+	\label{fig:pp_phishing2019}
+\end{figure}
+
 
 \newpage 
 
 \section{Wprowadzenie}
+
 
 
 
@@ -100,7 +108,48 @@ W przypadku adresów URL ważną kwestią jest jego uważne sprawdzenie litera p
 	\label{fig:url_phishing}
 \end{figure}
 
-\newpage
+\section{Rozpoznawanie phishingu przy pomocy nauczania maszynowego}
+
+....
+% https://arxiv.org/pdf/2201.10752.pdf
+\subsection{Dobór parametrów}
+Przy rozpoznawaniu phishingu w wiadomościach e-mail kluczowe jest \textit{body} wiadomości. Naturalnie znajduje się tam najwięcej treści, w tym \textit{odnośniki} i \textit{podpisy}. W oparciu o podejmiemy się utworzenia klasyfikatora, który pod uwagę bierze 10 cech. 
+
+\subsubsection{Certyfikat SSL}
+...
+Jeżeli HTTPS -> legit
+JEŻELI inny -> podejrzany
+
+\subsubsection{Autoryzacja certyfikatu}
+Authentic CA -> legit SSL
+otherwise -> suspicious
+
+\subsubsection{Czarna lista słów}
+"Click Now", "Verify Now," "Valid in 24h", and "Update Now."
+email word in {blacklist} -> sus
+otherwise -> legit
+
+\subsubsection{Odnośniki przekierowywujące}
+GET request of the HTTP protocol is used to verify the legitimacy of an URL.
+
+\subsubsection{Ukrywane odnośniki}
+"goo.gl", or "j.mp"
+
+\subsubsection{Adres IP wewnątrz odnośnika}
+adres ip w odnośniku -> sus
+brak adresu -> legit
+
+\subsubsection{Ruch wewnątrz strony internetowej}
+maly ruch -> sus
+duzy ruch -> legit
+
+\subsubsection{Wiek strony internetowej}
+starsza niz rok -> legit
+mlodsza -> sus
+
+\subsubsection{Adres e-mail nadawcy}
+
+
 \section{Skutki ataków phishingowych}
 
 \newpage
