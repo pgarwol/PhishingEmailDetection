@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  4 DEC 2023 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.30)  10 DEC 2023 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -174,13 +174,8 @@ File: Pictures/url_phishing.jpg Graphic file (type jpg)
 <use Pictures/url_phishing.jpg>
 Package pdftex.def Info: Pictures/url_phishing.jpg  used on input line 106.
 (pdftex.def)             Requested size: 207.0021pt x 115.4638pt.
-
-Overfull \hbox (3.80771pt too wide) in paragraph at lines 111--111
-[]\T1/cmr/bx/n/14.4 Rozpoznawanie phi-shingu przy po-mocy na-ucza-
- []
-
-[7 <./Pictures/url_phishing.jpg>] [8] [9] [10] [11] [12] (PhishingArticle.bbl)
-[13] (PhishingArticle.aux)
+ [7 <./Pictures/url_phishing.jpg>] [8] [9] [10] [11]
+[12] [13] (PhishingArticle.bbl) [14] (PhishingArticle.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -191,10 +186,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3093 strings out of 475248
- 51809 string characters out of 5767624
+ 3088 strings out of 475248
+ 51743 string characters out of 5767624
  1926785 words of memory out of 5000000
- 24615 multiletter control sequences out of 15000+600000
+ 24610 multiletter control sequences out of 15000+600000
  567216 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,1267b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -208,9 +203,9 @@ ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Patryk\AppData\Local\MiK
 TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Patryk\AppData\Lo
 cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PhishingArticle.pdf (13 pages, 429583 bytes).
+Output written on PhishingArticle.pdf (14 pages, 426705 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
+ 368 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

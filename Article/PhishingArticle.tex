@@ -108,46 +108,45 @@ W przypadku adresów URL ważną kwestią jest jego uważne sprawdzenie litera p
 	\label{fig:url_phishing}
 \end{figure}
 
-\section{Rozpoznawanie phishingu przy pomocy nauczania maszynowego}
+\section{Rozpoznawanie phishingu przy pomocy nadzorowanego nauczania maszynowego}
+\subsection{Zbiór danych}
 
-....
-% https://arxiv.org/pdf/2201.10752.pdf
+Za zbiór danych posłużył data set \textit{Phishing Email Curated Datasets} \cite{zenodo_phishing}. Zawiera on 11 plików \textit{csv}, które połączyliśmy w jeden.
 \subsection{Dobór parametrów}
-Przy rozpoznawaniu phishingu w wiadomościach e-mail kluczowe jest \textit{body} wiadomości. Naturalnie znajduje się tam najwięcej treści, w tym \textit{odnośniki} i \textit{podpisy}. W oparciu o podejmiemy się utworzenia klasyfikatora, który pod uwagę bierze 10 cech. 
 
-\subsubsection{Certyfikat SSL}
-...
-Jeżeli HTTPS -> legit
-JEŻELI inny -> podejrzany
 
-\subsubsection{Autoryzacja certyfikatu}
-Authentic CA -> legit SSL
-otherwise -> suspicious
+Przy rozpoznawaniu phishingu w wiadomościach e-mail kluczowe jest \textit{body} wiadomości. Naturalnie znajduje się tam najwięcej treści, w tym \textit{odnośniki} i \textit{niebezpieczne słowa kluczowe}. W oparciu o podejmiemy się utworzenia klasyfikatora, który pod uwagę bierze 15 cech.
 
-\subsubsection{Czarna lista słów}
-"Click Now", "Verify Now," "Valid in 24h", and "Update Now."
-email word in {blacklist} -> sus
-otherwise -> legit
+Niestety selekcja cech najbardziej liczących się jest trudna, a raczej - kosztowna. API, które prezentują wiele rozwiązań przydatnych do analizowanie m. in domeny są płatne. Przy data secie liczącym 41 574 wiersze niemożliwym jest skorzystać z darmowych rozwiązań. Stąd też musieliśmy porzucić analizowanie takich cech jak:
+\begin{itemize}[label=$\rightarrow$]
+	\item wiarygodność certyfikatu SSL - w Pythonie istnieją moduły \textit{ssl} i \textit{socket}, które pomagają ustalić organizację wystawiającą certyfikat SSL. Problemem jest to, że w wielu przypadkach zwracany jest błąd requesta, także wynik nie byłby miarodajny. Trzeba by też było powoływać się na listę uznanych organizacji, która byłaby subiektywna.
+	\item liczba odwiedzin witryny
+	\item wiek domeny
+\end{itemize}
 
-\subsubsection{Odnośniki przekierowywujące}
-GET request of the HTTP protocol is used to verify the legitimacy of an URL.
+W wyżej wspomnianych interfejsach programistycznych znajdują się także rozwiązania, które bezpośrednio zwracają informację, czy zadana domena znajduje się na czarnej liście, lub wykazuje skłonności do bycia zagrożeniem. Niestety wszystkojest za \textit{paywallem}. Musieliśmy zatem analizować pobrane pliki \textit{.csv} na podstawie charakterystyk odnośników URL i treści tematu, oraz \textit{body} wiadomości e-mail. W ten sposób wyodrębniliśmy poniższe cechy:
 
-\subsubsection{Ukrywane odnośniki}
-"goo.gl", or "j.mp"
+\begin{itemize}[label=$\rightarrow$]
+	\item ilość cyfr w nazwie nadawcy
+	\item ilość cyfr w domenie adresu nadawcy
+	\item długość domeny adresu nadawcy
+	\item ilość podejrzanych słów (na bazie subiektywnej listy) w temacie wiadomości
+	\item ilość podejrzanych słów w treści wiadomości
+	\item ilość odnośników URL w treści wiadomości
+	\item protokoły odnośników URL
+	\item informacja czy odnośnik zawiera IP
+	\item długości odnośników
+	\item informacja czy TLD zawiera tylko litery
+	\item poziom subdomeny
+	\item liczba wystąpień: "/", ".", "-"
+	\item informacja czy w odnośnikach znajdują się litery z alfabetu innego niż łaciński
+\end{itemize}
 
-\subsubsection{Adres IP wewnątrz odnośnika}
-adres ip w odnośniku -> sus
-brak adresu -> legit
+\subsection{Nauczanie}
+Po zmapowaniu wartości na liczbowe, podzieliliśmy zestaw na treningowy i testowy w proporcji 8:2. Sprawdziliśmy metodą \textit{GridSearchCV} najlepsze parametry wybranych klasyfikatorów: \textit{KNeighborsClassifier}, \textit{LogisticRegression}, \textit{DecisionTreeClassifier}, \textit{RandomForestClassifier}, \textit{SVM Classifier}. Najskuteczniejszy okazał się \textit{RandomForestClassifier}, który osiągnął F1 na poziomie 0.89 i 0.93, odpowiednio dla klasy \textit{safe} (oznaczającej bezpieczne e-maile) oraz \textit{phishing}.
 
-\subsubsection{Liczba odwiedzin witryny}
-maly ruch -> sus
-duzy ruch -> legit
 
-\subsubsection{Wiek strony internetowej}
-starsza niz rok -> legit
-mlodsza -> sus
 
-\subsubsection{Adres e-mail nadawcy}
 %https://github.com/maravento/blackweb/blob/master/bwupdate/lst/blockurls.txt
 
 \section{Skutki ataków phishingowych}
