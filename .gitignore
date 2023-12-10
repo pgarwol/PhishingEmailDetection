@@ -1,2 +1,4 @@
 
 merged_datasets.csv
+django-errors.log
+celery.sqlite
